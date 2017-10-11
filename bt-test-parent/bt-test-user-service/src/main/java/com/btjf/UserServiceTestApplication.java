@@ -2,19 +2,19 @@ package com.btjf;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
- * @Version: 1.0
+ * @Version:
  * @Design:
  * @Author: pudding
  * @Date: 2017/10/11.
  */
 @SpringBootApplication
-@EnableEurekaServer
-public class EurekaServerTestApplication {
+@EnableEurekaClient
+public class UserServiceTestApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(EurekaServerTestApplication.class, args);
+        SpringApplication.run(UserServiceTestApplication.class, args);
     }
 }

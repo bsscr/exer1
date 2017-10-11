@@ -10,6 +10,9 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>bt-test-eureka-server</module>
+        <module>bt-test-zipkin-server</module>
+        <module>bt-test-user-service</module>
+        <module>bt-test-gateway-service</module>
     </modules>
 
     <parent>

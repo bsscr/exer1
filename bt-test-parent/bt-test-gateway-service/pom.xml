@@ -10,14 +10,26 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>bt-test</groupId>
-    <artifactId>bt-test-eureka-server</artifactId>
+    <artifactId>bt-test-gateway-service</artifactId>
 
     <dependencies>
-        <!--spring cloud-->
-        <!--eureka server-->
+        <!--eureka client-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka-server</artifactId>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
+        </dependency>
+
+        <!--zuul-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-zuul</artifactId>
+        </dependency>
+
+        <!--zipkin client-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-zipkin</artifactId>
+            <version>RELEASE</version>
         </dependency>
     </dependencies>
 </project>
