@@ -1,22 +1,22 @@
 package com.btjf;
 
-import de.codecentric.boot.admin.config.EnableAdminServer;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.config.server.EnableConfigServer;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  * @Version:
  * @Design:
  * @Author: pudding
- * @Date: 2017/10/11.
+ * @Date: 2017/10/12.
  */
 @SpringBootApplication
+@EnableConfigServer
 @EnableEurekaClient
-public class UserServiceTestApplication {
+public class ConfigServerTestApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(UserServiceTestApplication.class, args);
+        SpringApplication.run(ConfigServerTestApplication.class, args);
     }
 }

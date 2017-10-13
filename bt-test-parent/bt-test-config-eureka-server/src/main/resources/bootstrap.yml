@@ -1,0 +1,10 @@
+# config 服务器配置
+spring:
+  cloud:
+    config:
+      label: master # git 分支
+      profile: dev # 配置环境 dev 开发 test 测试 pro 生产
+      uri: http://localhost:9004/
+# 应用名称需要和文件名称对应，获取使用application
+  application:
+    name: config-eureka-server

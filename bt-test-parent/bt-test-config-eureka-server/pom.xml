@@ -10,23 +10,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>bt-test</groupId>
-    <artifactId>bt-test-user-service</artifactId>
+    <artifactId>bt-test-config-eureka-server</artifactId>
 
     <dependencies>
+        <!--spring cloud-->
+        <!--eureka server-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-zipkin</artifactId>
-            <version>RELEASE</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-netflix-core</artifactId>
+            <artifactId>spring-cloud-starter-eureka-server</artifactId>
         </dependency>
     </dependencies>
 </project>

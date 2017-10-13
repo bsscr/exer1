@@ -13,6 +13,10 @@
         <module>bt-test-zipkin-server</module>
         <module>bt-test-user-service</module>
         <module>bt-test-gateway-service</module>
+        <module>bt-test-admin-server</module>
+        <module>bt-test-config-server</module>
+        <module>bt-test-config-eureka-server</module>
+        <module>bt-test-service</module>
     </modules>
 
     <parent>
@@ -30,12 +34,37 @@
     </properties>
 
     <dependencies>
+        <!--spring cloud-->
+        <!--配置中心客户端-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
+        <!--eureka client-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
+        </dependency>
+
         <!--spring boot-->
         <!--test-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <!--监控 admin-->
+        <dependency>
+            <groupId>de.codecentric</groupId>
+            <artifactId>spring-boot-admin-server</artifactId>
+            <version>1.3.2</version>
+        </dependency>
+        <!--admin server ui-->
+        <dependency>
+            <groupId>de.codecentric</groupId>
+            <artifactId>spring-boot-admin-server-ui</artifactId>
+            <version>1.3.2</version>
         </dependency>
     </dependencies>
 
